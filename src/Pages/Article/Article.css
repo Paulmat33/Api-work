@@ -1,0 +1,40 @@
+.top-image{
+ max-width: 1440px;
+height: 245px;
+}
+.article-head{
+  padding:35px 75px 50px 75px;
+  width: 1290px;
+height: 1001px;
+border-radius: 5px;
+border: 1px;
+border: 1px solid #EAEAEA;
+box-shadow: 0px 8px 24px 0px #0000000D;
+
+}
+.article-head h4{
+font-size: 24px;
+font-weight: 400;
+line-height: 29.26px;
+text-align: center;
+margin-bottom: 50px;
+color: #363636;
+
+
+}
+.article-head p{
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+color:#000000;
+}
+.btn{
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+color:#363636;
+padding-top:35px;
+padding-bottom: 45px;
+}
