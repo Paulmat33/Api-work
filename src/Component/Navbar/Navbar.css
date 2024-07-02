@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+ul{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px;
+}
+li{
+  list-style: none;
+}
+
+.mobile-view{
+  display:none;
+}
+
+@media screen and (max-width:768px) {
+  .mobile-view{
+    display:block;
+  }
+}
