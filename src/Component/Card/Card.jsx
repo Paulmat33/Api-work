@@ -9,6 +9,22 @@ const Card = ({element}) => {
 const handleClick = () =>  {
   navigate("/article", {state: {cardState: element}}); 
 }
+const dateStr = "2024-07-02T09:37:16Z";
+const date = new Date(dateStr);
+
+const day = date.getUTCDate();
+const month = date.toLocaleString('default', { month: 'long' });
+const year = date.getUTCFullYear();
+
+const ordinalSuffix = (n) => {
+  const s = ["th", "st", "nd", "rd"];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+
+const formattedDate = `${month} ${ordinalSuffix(day)}, ${year}`;
+// console.log(formattedDate); // Output: July 2nd, 2024
+
   return (
     <div className="div-class1">
       <div className="image1">
@@ -17,7 +33,7 @@ const handleClick = () =>  {
       <div className='text-word'>
         <div className="calender">
           <CiCalendar />
-          <span>June 29th, 2021</span>
+          <span>{formattedDate}</span>
         </div>
         <h3>{element.title}</h3>
         <p>{element.description.slice(0,99)}... </p>

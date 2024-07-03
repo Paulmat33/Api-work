@@ -8,9 +8,9 @@ import Navbar from './Component/Navbar/Navbar';
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
+    {/* <Navbar/> */}
     <Routes>
-      {/* <Route index element={<Homepage/>}/> */}
+      <Route index element={<Homepage/>}/>
       <Route path='article' element={<Article/>}/>
       </Routes>
       </BrowserRouter>
